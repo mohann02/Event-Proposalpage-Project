@@ -91,7 +91,7 @@ const ProposalsForm = () => {
       formData.append("images", postImage[i]);
     }
     try {
-      await axios.post("http://localhost:8080/createProposals", formData);
+      await axios.post("https://event-proposalpage-h8dw.onrender.com/createProposals", formData);
     } catch (err) {
       alert("Errorin submitting form");
       console.error(err);
